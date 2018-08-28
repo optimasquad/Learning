@@ -1,0 +1,41 @@
+CREATE OR REPLACE PROCEDURE "SYSTEM"."RECORD_FAILED_EVENTS"
+(
+p_in_id IN PARTIES.ID%TYPE,
+p_in_username IN PARTIES.USER_NAME%TYPE,
+p_in_first_name IN PARTIES.FIRST_NAME%TYPE,
+p_in_status IN PARTIES.STATUS%TYPE,
+p_in_lastname IN PARTIES.LAST_NAME%TYPE,
+p_in_account_number IN PARTIES.ACCOUNT_NUMBER%TYPE,
+p_in_legal_entity_id IN PARTIES.LEGAL_ENTITY_ID%TYPE,
+p_out_syscursor OUT REFCURSOR,
+p_out_error_code OUT NUMBER,
+p_out_error_message OUT VARCHAR
+
+)
+
+AS
+
+l_error_code:=0;
+l_error_message:='Successfully fetched';
+
+BEGIN
+p_out_error_code:=l_error_code;
+p_out_error_message:=l_error_message;
+
+IF p_in_username<>NULL AND p_in_first_name AND p_in_status<>NULL
+
+INSERT INTO PARTIES VALUES(4,p_in_username,p_in_first_name,p_in_status,p_in_lastname
+,p_in_account_number,p_in_legal_entity_id);
+
+OPEN p_out_syscursor FOR SELECT max(id) FROM PARTIES;
+
+ELSE
+
+OPEN p_out_syscursor FOR  SELECT 'INVALIDINPUT' FROM DUAL;
+P_OUT_ERROR_CODE:=-2001;
+P_OUT_ERROR_MESSAGE:='ERROR OCCURRED';
+
+END IF;
+
+END RECORD_FAILED_EVENTS;
+

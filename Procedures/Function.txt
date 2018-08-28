@@ -1,0 +1,208 @@
+
+CREATE OR REPLACE FUNCTION NEXT_CLIENT_ID
+RETURN NUMBER
+AS
+L_RAND_NUM NUMBER;
+L_CLIENT_ID_FLAG VARCHAR2(1):='Y';
+CNT NUMBER;
+
+BEGIN
+WHILE L_CLIENT_ID_FLAG='Y' LOOP
+L_RAND_NUM:=TRUNC(10000/POWER(2,102)+1);
+
+
+IF L_RAND_NUM>0 AND LENGTH(L_RAND_NUM)=8 THEN
+
+SELECT COUNT(1) INTO CNT FROM PARTIES WHERE CLIENT_ID=L_RAND_NUM;
+
+IF CNT>0 THEN
+L_CLIENT_ID_FLAG:='Y';
+ELSE
+L_CLIENT_ID_FLAG:='N';
+END IF;
+END IF;
+END LOOP;
+RETURN L_RAND_NUM;
+END NEXT_CLIENT_ID;
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+CREATE OR REPLACE PROCEDURE "RETRIEVE_CUST_SER_DET_PRC"
+(
+P_IN_CLIENT_ID IN PARTIES.ID %TYPE,
+P_IN_WORK_ITEM_ID IN PARTIES.ID %TYPE,
+P_OUT_SER_CUR OUT SYS_REFCURSOR,
+P_OUT_ERROR_CODE OUT NUMBER,
+P_OUT_ERROR_MESSAGE OUT VARCHAR
+)
+
+AS
+L_ERROR_CODE NUMBER:=0;
+L_ERROR_MESSAGE VARCHAR(500):='SUCCESSFULLY FETCHED';
+
+
+BEGIN
+P_OUT_ERROR_CODE:=L_ERROR_CODE;
+P_OUT_ERROR_MESSAGE:=L_ERROR_MESSAGE;
+
+IF P_IN_CLIENT_ID IS NOT NULL THEN
+OPEN P_OUT_SER_CUR FOR SELECT PAR.USER_NAME,PAR.FIRST_NAME,PAR.LAST_NAME FROM PARTIES PAR
+WHERE PAR.ID=P_IN_CLIENT_ID;
+ELSE
+OPEN P_OUT_SER_CUR FOR  SELECT 'INVALIDINPUT' FROM DUAL;
+P_OUT_ERROR_CODE:=-2001;
+P_OUT_ERROR_MESSAGE:='ERROR OCCURRED';
+
+END IF;
+END RETRIEVE_CUST_SER_DET_PRC;
+
+
+
+
+
+-------------------------------------------------------------------------------
+
+
+CREATE OR REPLACE TRIGGER PARTY_SEQ
+
+BEFORE INSERT ON
+PARTIES
+FOR EACH ROW
+WHEN(NEW.ID IS NULL)
+BEGIN
+SELECT SEQ_PARTIES.NEXTVAL INTO :NEW.ID FROM DUAL;
+END PARTY_SEQ;
+
+----------------------------------------------------------------------------------
+
+In Oracle PL/SQL, PCTFREE is a block utilization parameter which is used to specify the free space in a data block. 
+By default, its value is 10. The statement "PCTFREE is set as 10" means that 10% space would be kept free in all data blocks in the table for its future growth. 
+Once the data block is left with only PCTFREE free space, it is removed from the free list.
+ Subsequently, Oracle will hold the INSERT operation on the table until the next block is added to the free list.
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+alter table 
+   table_name
+modify 
+( 
+   column_name    varchar2(30)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+IMP-http://docs.oracle.com/cd/B10501_01/server.920/a96521/schema.htm
+
+
+
+----------------------------------------------------------------------------
+
+SELECT * FROM PARTIES;
+
+
+CREATE MATERIALIZED VIEW "SYSTEM"."PARTIES_VIEW"("ID","USER_NAME","FIRST_NAME","STATUS","LAST_NAME","ACCOUNT_NUMBER","LEGAL_ENTITY_ID")
+
+ORGANIZATION HEAP PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+
+NOCOMPRESS LOGGING
+
+STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+
+PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+
+BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE)
+
+TABLESPACE "SYSTEM"
+
+BUILD IMMEDIATE
+
+USING INDEX
+
+REFRESH COMPLETE ON DEMAND START WITH SYSDATE+0 NEXT TRUNC(SYSDATE+1)+9/1440
+USING DEFAULT LOCAL ROLLBACK SEGMENT USING ENFORCED CONSTRAINTS DISABLE 
+QUERY REWRITE 
+AS
+
+SELECT PP.ID,PP.USER_NAME,PP.FIRST_NAME,
+PP.STATUS,PP.LAST_NAME ,PP.ACCOUNT_NUMBER,PP.LEGAL_ENTITY_ID FROM PARTIES PP;
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+SELECT * FROM PARTIES_STATUS;
+
+DELETE FROM PARTIES_STATUS WHERE party_id=1;
+
+
+SELECT PP.ID,PS.PARTY_STATUS,PP.USER_NAME,PP.FIRST_NAME
+							 FROM PARTIES PP INNER JOIN PARTIES_STATUS PS 
+							ON PS.PARTY_ID=PP.ID WHERE PP.ID=1;
+
+
+
+CREATE OR REPLACE PROCEDURE
+"PARTIY_STATUS_FETCH"
+(
+p_in_userid IN NUMBER,
+p_cusror_out OUT SYS_REFCURSOR,
+p_out_errorcode OUT NUMBER,
+p_out_errormessage OUT VARCHAR
+)
+AS
+
+l_error_code NUMBER:=0;
+l_error_message VARCHAR(25):='successfully fetched';
+
+BEGIN
+
+p_out_errorcode:=l_error_code;
+p_out_errormessage:=l_error_message;
+
+			OPEN p_cusror_out FOR SELECT PP.ID,PS.PARTY_STATUS,PP.USER_NAME,PP.FIRST_NAME
+							 FROM PARTIES PP INNER JOIN PARTIES_STATUS PS 
+							ON PS.PARTY_ID=PP.ID WHERE PP.ID=p_in_userid;
+
+
+
+END PARTIY_STATUS_FETCH;
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+DECLARE
+  stmt_str VARCHAR2(200);
+  deptnumber NUMBER := 99;
+  deptname VARCHAR2(20);
+  location VARCHAR2(10);
+BEGIN
+  stmt_str := 'INSERT INTO dept_new VALUES  
+  (:deptno, :dname, :loc)';
+  EXECUTE IMMEDIATE stmt_str 
+    USING deptnumber, deptname, location;
+END;
+/
+
+
+
+

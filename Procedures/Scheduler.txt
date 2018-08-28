@@ -1,0 +1,18 @@
+
+BEGIN
+                Dbms_Scheduler.create_job(
+                    job_name   => 'DEMO_JOB2'
+                   ,job_type   => 'STORED_PROCEDURE' 
+                   ,job_action   => 'PARTIES_TABLE_ENTER' -- Procedure Name
+                   ,start_date   => SYSDATE
+                   ,repeat_interval => 'freq=MINUTELY;interval=1' -- For every 2 min check goole for different options
+                   ,enabled   => TRUE
+                   ,comments   => 'Demo for job schedule.');
+END;
+
+
+SELECT * FROM PARTIES;
+SELECT * FROM ALL_SCHEDULER_JOBS;
+
+
+https://msdn.microsoft.com/en-us/library/dd819156.aspx
