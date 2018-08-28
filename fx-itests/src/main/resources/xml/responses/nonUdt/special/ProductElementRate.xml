@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns="CSG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <AccountServer e-dtype="string">3</AccountServer>
+    <ApplicationName e-dtype="string">ProductElementRate_CC</ApplicationName>
+    <OperatorName e-dtype="string">Nalini</OperatorName>
+    <TenantId e-dtype="int"/>
+    <DebugFlag e-dtype="boolean">1</DebugFlag>
+  </Header>
+  <ProductElementRateResponse>
+    <Cost e-dtype="numeric">0</Cost>
+    <Rate e-dtype="numeric">12700</Rate>
+  </ProductElementRateResponse>
+</Request>

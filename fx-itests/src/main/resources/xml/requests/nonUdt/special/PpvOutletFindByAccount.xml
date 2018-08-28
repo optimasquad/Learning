@@ -1,0 +1,14 @@
+<Request>
+	<Header>
+		<AccountServer e-dtype="string">3</AccountServer>
+		<ApplicationName e-dtype="string">PpvOutletFindByAccount</ApplicationName>
+		<OperatorName e-dtype="string">arbor</OperatorName>
+		<TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<PpvOutletFindByAccount>
+		<AccountIn>
+			<Fetch e-dtype="boolean">true</Fetch>
+			<AccountInternalId e-dtype="int">3542</AccountInternalId>
+		</AccountIn>
+	</PpvOutletFindByAccount>
+</Request>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns="CSG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <AccountServer e-dtype="string"/>
+    <ApplicationName e-dtype="string">DOMTest</ApplicationName>
+    <OperatorName e-dtype="string">arborsv</OperatorName>
+    <TenantId e-dtype="int"/>
+  </Header>
+  <UDTResponse>
+    <UDTResponseList e-dtype="list">
+      <UDTResponse>
+        <ServicePricingPlanList e-dtype="list"/>
+        <Index e-dtype="int">0</Index>
+        <Count e-dtype="int">0</Count>
+        <TotalCount e-dtype="int">0</TotalCount>
+        <RequestId e-dtype="string">ServicePricingPlanFindEligible</RequestId>
+        <RequestObjName e-dtype="string">ProductCatalog</RequestObjName>
+      </UDTResponse>
+    </UDTResponseList>
+  </UDTResponse>
+</Request>

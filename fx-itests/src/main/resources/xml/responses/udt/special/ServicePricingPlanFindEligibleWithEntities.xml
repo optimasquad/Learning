@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns="CSG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <AccountServer e-dtype="string"/>
+    <ApplicationName e-dtype="string">DOMTest</ApplicationName>
+    <OperatorName e-dtype="string">arborsv</OperatorName>
+    <TenantId e-dtype="int"/>
+  </Header>
+  <UDTResponse>
+    <UDTResponseList e-dtype="list">
+      <UDTResponse>
+        <ServicePricingPlanList e-dtype="list">
+          <ServicePricingPlan>
+            <ActiveDt e-dtype="dateTime">1990-01-01 00:00:00</ActiveDt>
+            <ClassOfServiceCode e-dtype="int">0</ClassOfServiceCode>
+            <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+            <DefaultExternalIdType e-dtype="int">1</DefaultExternalIdType>
+            <DisplayValue e-dtype="string">Broadband</DisplayValue>
+            <EmfBookId e-dtype="int">10</EmfBookId>
+            <EmfType e-dtype="int">0</EmfType>
+            <EquipClassCode e-dtype="int">0</EquipClassCode>
+            <EquipTypeCode e-dtype="int">3</EquipTypeCode>
+            <IndustryType e-dtype="int">2</IndustryType>
+            <IsCallingCardUsed e-dtype="boolean">false</IsCallingCardUsed>
+            <IsDadlUsed e-dtype="boolean">false</IsDadlUsed>
+            <IsDefault e-dtype="boolean">false</IsDefault>
+            <IsE911Required e-dtype="boolean">false</IsE911Required>
+            <IsInternal e-dtype="boolean">false</IsInternal>
+            <IsLidbRequired e-dtype="boolean">false</IsLidbRequired>
+            <IsPicRequired e-dtype="boolean">false</IsPicRequired>
+            <IsServiceabilityApplicable e-dtype="boolean">true</IsServiceabilityApplicable>
+            <Key>
+              <EmfConfigId e-dtype="int">10</EmfConfigId>
+              <LanguageCode e-dtype="int">1</LanguageCode>
+            </Key>
+            <UseAddressServer e-dtype="boolean">true</UseAddressServer>
+          </ServicePricingPlan>
+          <ServicePricingPlan>
+            <ActiveDt e-dtype="dateTime">1990-01-01 00:00:00</ActiveDt>
+            <ClassOfServiceCode e-dtype="int">0</ClassOfServiceCode>
+            <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+            <DefaultExternalIdType e-dtype="int">1</DefaultExternalIdType>
+            <DisplayValue e-dtype="string">Cable TV</DisplayValue>
+            <EmfBookId e-dtype="int">8</EmfBookId>
+            <EmfType e-dtype="int">0</EmfType>
+            <EquipClassCode e-dtype="int">2</EquipClassCode>
+            <EquipTypeCode e-dtype="int">1</EquipTypeCode>
+            <IndustryType e-dtype="int">3</IndustryType>
+            <IsCallingCardUsed e-dtype="boolean">false</IsCallingCardUsed>
+            <IsDadlUsed e-dtype="boolean">false</IsDadlUsed>
+            <IsDefault e-dtype="boolean">false</IsDefault>
+            <IsE911Required e-dtype="boolean">false</IsE911Required>
+            <IsInternal e-dtype="boolean">false</IsInternal>
+            <IsLidbRequired e-dtype="boolean">false</IsLidbRequired>
+            <IsPicRequired e-dtype="boolean">false</IsPicRequired>
+            <IsServiceabilityApplicable e-dtype="boolean">true</IsServiceabilityApplicable>
+            <Key>
+              <EmfConfigId e-dtype="int">8</EmfConfigId>
+              <LanguageCode e-dtype="int">1</LanguageCode>
+            </Key>
+            <UseAddressServer e-dtype="boolean">true</UseAddressServer>
+          </ServicePricingPlan>
+          <ServicePricingPlan>
+            <ActiveDt e-dtype="dateTime">1990-01-01 00:00:00</ActiveDt>
+            <ClassOfServiceCode e-dtype="int">2</ClassOfServiceCode>
+            <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+            <DefaultExternalIdType e-dtype="int">1</DefaultExternalIdType>
+            <DisplayValue e-dtype="string">Cable TV (Non Integrated)</DisplayValue>
+            <EmfBookId e-dtype="int">7</EmfBookId>
+            <EmfType e-dtype="int">0</EmfType>
+            <EquipClassCode e-dtype="int">2</EquipClassCode>
+            <EquipTypeCode e-dtype="int">1</EquipTypeCode>
+            <IndustryType e-dtype="int">3</IndustryType>
+            <IsCallingCardUsed e-dtype="boolean">false</IsCallingCardUsed>
+            <IsDadlUsed e-dtype="boolean">false</IsDadlUsed>
+            <IsDefault e-dtype="boolean">false</IsDefault>
+            <IsE911Required e-dtype="boolean">false</IsE911Required>
+            <IsInternal e-dtype="boolean">false</IsInternal>
+            <IsLidbRequired e-dtype="boolean">false</IsLidbRequired>
+            <IsPicRequired e-dtype="boolean">false</IsPicRequired>
+            <IsServiceabilityApplicable e-dtype="boolean">true</IsServiceabilityApplicable>
+            <Key>
+              <EmfConfigId e-dtype="int">7</EmfConfigId>
+              <LanguageCode e-dtype="int">1</LanguageCode>
+            </Key>
+            <UseAddressServer e-dtype="boolean">true</UseAddressServer>
+          </ServicePricingPlan>
+          <ServicePricingPlan>
+            <ActiveDt e-dtype="dateTime">1990-01-01 00:00:00</ActiveDt>
+            <ClassOfServiceCode e-dtype="int">1</ClassOfServiceCode>
+            <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+            <DefaultExternalIdType e-dtype="int">1</DefaultExternalIdType>
+            <DisplayValue e-dtype="string">Cable TV (Integrated)</DisplayValue>
+            <EmfBookId e-dtype="int">6</EmfBookId>
+            <EmfType e-dtype="int">0</EmfType>
+            <EquipClassCode e-dtype="int">2</EquipClassCode>
+            <EquipTypeCode e-dtype="int">1</EquipTypeCode>
+            <IndustryType e-dtype="int">3</IndustryType>
+            <IsCallingCardUsed e-dtype="boolean">false</IsCallingCardUsed>
+            <IsDadlUsed e-dtype="boolean">false</IsDadlUsed>
+            <IsDefault e-dtype="boolean">false</IsDefault>
+            <IsE911Required e-dtype="boolean">false</IsE911Required>
+            <IsInternal e-dtype="boolean">false</IsInternal>
+            <IsLidbRequired e-dtype="boolean">false</IsLidbRequired>
+            <IsPicRequired e-dtype="boolean">false</IsPicRequired>
+            <IsServiceabilityApplicable e-dtype="boolean">true</IsServiceabilityApplicable>
+            <Key>
+              <EmfConfigId e-dtype="int">6</EmfConfigId>
+              <LanguageCode e-dtype="int">1</LanguageCode>
+            </Key>
+            <UseAddressServer e-dtype="boolean">true</UseAddressServer>
+          </ServicePricingPlan>
+          <ServicePricingPlan>
+            <ActiveDt e-dtype="dateTime">1990-01-01 00:00:00</ActiveDt>
+            <ClassOfServiceCode e-dtype="int">0</ClassOfServiceCode>
+            <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+            <DefaultExternalIdType e-dtype="int">1</DefaultExternalIdType>
+            <DisplayValue e-dtype="string">Internet</DisplayValue>
+            <EmfBookId e-dtype="int">13</EmfBookId>
+            <EmfType e-dtype="int">0</EmfType>
+            <EquipClassCode e-dtype="int">0</EquipClassCode>
+            <EquipTypeCode e-dtype="int">4</EquipTypeCode>
+            <IndustryType e-dtype="int">4</IndustryType>
+            <IsCallingCardUsed e-dtype="boolean">false</IsCallingCardUsed>
+            <IsDadlUsed e-dtype="boolean">false</IsDadlUsed>
+            <IsDefault e-dtype="boolean">false</IsDefault>
+            <IsE911Required e-dtype="boolean">false</IsE911Required>
+            <IsInternal e-dtype="boolean">false</IsInternal>
+            <IsLidbRequired e-dtype="boolean">false</IsLidbRequired>
+            <IsPicRequired e-dtype="boolean">false</IsPicRequired>
+            <IsServiceabilityApplicable e-dtype="boolean">true</IsServiceabilityApplicable>
+            <Key>
+              <EmfConfigId e-dtype="int">13</EmfConfigId>
+              <LanguageCode e-dtype="int">1</LanguageCode>
+            </Key>
+            <UseAddressServer e-dtype="boolean">true</UseAddressServer>
+          </ServicePricingPlan>
+          <ServicePricingPlan>
+            <ActiveDt e-dtype="dateTime">1990-01-01 00:00:00</ActiveDt>
+            <ClassOfServiceCode e-dtype="int">0</ClassOfServiceCode>
+            <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+            <DefaultExternalIdType e-dtype="int">1</DefaultExternalIdType>
+            <DisplayValue e-dtype="string">Voice</DisplayValue>
+            <EmfBookId e-dtype="int">14</EmfBookId>
+            <EmfType e-dtype="int">0</EmfType>
+            <EquipClassCode e-dtype="int">0</EquipClassCode>
+            <EquipTypeCode e-dtype="int">5</EquipTypeCode>
+            <IndustryType e-dtype="int">5</IndustryType>
+            <IsCallingCardUsed e-dtype="boolean">false</IsCallingCardUsed>
+            <IsDadlUsed e-dtype="boolean">false</IsDadlUsed>
+            <IsDefault e-dtype="boolean">false</IsDefault>
+            <IsE911Required e-dtype="boolean">false</IsE911Required>
+            <IsInternal e-dtype="boolean">false</IsInternal>
+            <IsLidbRequired e-dtype="boolean">false</IsLidbRequired>
+            <IsPicRequired e-dtype="boolean">false</IsPicRequired>
+            <IsServiceabilityApplicable e-dtype="boolean">true</IsServiceabilityApplicable>
+            <Key>
+              <EmfConfigId e-dtype="int">14</EmfConfigId>
+              <LanguageCode e-dtype="int">1</LanguageCode>
+            </Key>
+            <UseAddressServer e-dtype="boolean">true</UseAddressServer>
+          </ServicePricingPlan>
+        </ServicePricingPlanList>
+        <Index e-dtype="int">0</Index>
+        <Count e-dtype="int">6</Count>
+        <TotalCount e-dtype="int">6</TotalCount>
+        <RequestId e-dtype="string">ServicePricingPlanFindEligible</RequestId>
+        <RequestObjName e-dtype="string">ProductCatalog</RequestObjName>
+      </UDTResponse>
+    </UDTResponseList>
+  </UDTResponse>
+</Request>

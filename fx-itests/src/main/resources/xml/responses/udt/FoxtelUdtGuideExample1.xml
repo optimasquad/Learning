@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Request xmlns:aruba="ARUBA" xmlns:csg="CSG" xmlns:xsi="xmlSchema">
+    <Header>
+        <AccountServer e-dtype="int">3</AccountServer>
+        <ApplicationName e-dtype="string">TestApp</ApplicationName>
+        <OperatorName e-dtype="string">jdoe03</OperatorName>
+        <ExecutionTrace e-dtype="boolean">true</ExecutionTrace>
+        <Debug e-dtype="boolean">true</Debug>
+    </Header>
+    <CustomerUdtRequest>
+        <RequestList e-dtype="list">
+            <!-- ################################################################## -->
+            <!-- Create an Account -->
+            <!-- ################################################################## -->
+            <OrderedAccount>
+                <RequestId e-dtype="string">MyNewAccountRequest</RequestId>
+                <OrderedAccountCreate>
+                    <Account>
+                        <AccountCategory e-dtype="int">1</AccountCategory>
+                        <AcctSegId e-dtype="int">1</AcctSegId>
+                        <BillLname e-dtype="string">Baywater</BillLname>
+                        <BillFname e-dtype="string">Rebecca</BillFname>
+                        <BillAddress1 e-dtype="string">123 South St.</BillAddress1>
+            			<ExtendedData e-dtype="list">
+        					<ExtendedDataParam>
+        						<ParamId e-dtype="int">9112</ParamId>
+        						<ParamValue e-dtype="any">2</ParamValue>
+        						<ParamName e-dtype="string">Foxtel Marketing</ParamName>
+        					</ExtendedDataParam>
+        					<ExtendedDataParam>
+        						<ParamId e-dtype="int">9113</ParamId>
+        						<ParamValue e-dtype="any">3</ParamValue>
+        						<ParamName e-dtype="string">Identifier Question</ParamName>
+        					</ExtendedDataParam>
+        					<ExtendedDataParam>
+        						<ParamId e-dtype="int">9114</ParamId>
+        						<ParamValue e-dtype="any">4</ParamValue>
+        						<ParamName e-dtype="string">Identifier Answer</ParamName>
+        					</ExtendedDataParam>
+        					<ExtendedDataParam>
+        						<ParamId e-dtype="int">10027</ParamId>
+        						<ParamValue e-dtype="any">27</ParamValue>
+        						<ParamName e-dtype="string">Disclosure to Foxtel Partners</ParamName>
+        					</ExtendedDataParam>
+        				</ExtendedData>
+                    </Account>
+                    <BillingServiceCenterId e-dtype="int">1</BillingServiceCenterId>
+                    <RemitServiceCenterId e-dtype="int">2</RemitServiceCenterId>
+                    <InquiryServiceCenterId e-dtype="int">3</InquiryServiceCenterId>
+                    <CollectionServiceCenterId e-dtype="int">4</CollectionServiceCenterId>
+                    <PrintServiceCenterId e-dtype="int">5</PrintServiceCenterId>
+                    <VerboseResponse e-dtype="boolean">true</VerboseResponse>
+                </OrderedAccountCreate>
+            </OrderedAccount>
+            <!-- ################################################################## -->
+            <!-- Create a Service and associate it with the Account -->
+            <!-- ################################################################## -->
+            <!-- 
+            <OrderedService>
+                <RequestId e-dtype="string">MyNewServiceRequest</RequestId>
+                <OrderedServiceCreate>
+                    <Service>
+                        <ParentAccountInternalId>
+                            <Ref e-dtype="string">MyNewAccountRequest/Account/Key/AccountInternalId</Ref>
+                        </ParentAccountInternalId>
+                        <EmfConfigId e-dtype="int">200</EmfConfigId>
+                        <ViewStatus e-dtype="int">1</ViewStatus>
+                        <DisplayExternalIdType e-dtype="int">1</DisplayExternalIdType>
+                        <PrivacyLevel e-dtype="int">0</PrivacyLevel>
+                        <RevRcvCostCtr e-dtype="int">1</RevRcvCostCtr>
+                        <StreetName e-dtype="string">Main Street</StreetName>
+                        <City e-dtype="string">Cambridge</City>
+                        <State e-dtype="string">MA</State>
+                        <PostalCode e-dtype="string">02142</PostalCode>
+                    </Service>
+                    <Order>
+                        <Ref e-dtype="string">MyNewAccountRequest/Order</Ref>
+                    </Order>
+                </OrderedServiceCreate>
+            </OrderedService>
+             -->
+            <!-- ################################################################## -->
+            <!-- Create an Account-level Product and associate it with the Account -->
+            <!-- ################################################################## -->
+            <OrderedProduct>
+                <RequestId e-dtype="string">MyNewProduct1Request</RequestId>
+                <OrderedProductCreate>
+                    <Product>
+                        <ParentAccountInternalId>
+                            <Ref e-dtype="string">MyNewAccountRequest/Account/Key/AccountInternalId</Ref>
+                        </ParentAccountInternalId>
+                        <BillingAccountInternalId>
+                            <Ref e-dtype="string">MyNewAccountRequest/Account/Key/AccountInternalId</Ref>
+                        </BillingAccountInternalId>
+                        <ElementId e-dtype="int">101004</ElementId>
+                        <ViewStatus e-dtype="int">1</ViewStatus>
+                        <OpenItemId e-dtype="int">101</OpenItemId>
+                    </Product>
+                    <FindExistingSO e-dtype="boolean">true</FindExistingSO>
+                </OrderedProductCreate>
+            </OrderedProduct>
+            <!-- ################################################################## -->
+            <!-- Create a Service-level Product and associate it with the Service -->
+            <!-- ################################################################## -->
+            <!-- 
+            <OrderedProduct>
+                <RequestId e-dtype="string">MyNewProduct2Request</RequestId>
+                <OrderedProductCreate>
+                    <Product>
+                        <ParentAccountInternalId>
+                            <Ref e-dtype="string">MyNewAccountRequest/Account/Key/AccountInternalId</Ref>
+                        </ParentAccountInternalId>
+                        <ParentServiceInternalId>
+                            <Ref e-dtype="string">MyNewServiceRequest/Service/ServiceInternalId</Ref>
+                        </ParentServiceInternalId>
+                        <ParentServiceInternalIdResets>
+                            <Ref e-dtype="string">MyNewServiceRequest/Service/ServiceInternalIdResets</Ref>
+                        </ParentServiceInternalIdResets>
+                        <BillingAccountInternalId>
+                            <Ref e-dtype="string">MyNewAccountRequest/Account/Key/AccountInternalId</Ref>
+                        </BillingAccountInternalId>
+                        <ElementId e-dtype="int">100</ElementId>
+                        <ViewStatus e-dtype="int">1</ViewStatus>
+                        <OpenItemId e-dtype="int">15000</OpenItemId>
+                    </Product>
+                    <FindExistingSO e-dtype="boolean">true</FindExistingSO>
+                </OrderedProductCreate>
+            </OrderedProduct>
+             -->
+            <!-- ################################################################## -->
+            <!-- Commit the Order -->
+            <!-- ################################################################## -->
+            <Order>
+                <RequestId e-dtype="string">OrderCommit</RequestId>
+                <OrderCommit>
+                    <Order>
+                        <Key>
+                            <OrderId>
+                                <Ref e-dtype="string">MyNewAccountRequest/Order/Key/OrderId</Ref>
+                            </OrderId>
+                        </Key>
+                    </Order>
+                </OrderCommit>
+            </Order>
+        </RequestList>
+    </CustomerUdtRequest>
+</Request>

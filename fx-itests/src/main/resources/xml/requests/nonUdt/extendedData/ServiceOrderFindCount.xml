@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domtest</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domtest</UserName>
+		<TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<ServiceOrderFindCount>
+		<ServiceOrder>
+			<Fetch e-dtype="boolean">true</Fetch>
+			<Key>
+				<ServiceOrderId>
+					<Equal e-dtype="numeric">620205003</Equal>
+				</ServiceOrderId>
+			</Key>
+		</ServiceOrder>
+	</ServiceOrderFindCount>
+</Request>

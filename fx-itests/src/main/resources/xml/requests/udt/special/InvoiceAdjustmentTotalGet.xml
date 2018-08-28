@@ -1,0 +1,17 @@
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<Adjustment>
+				<InvoiceAdjustmentTotalGet>
+						<BillRefNo e-dtype="int">264121743</BillRefNo>
+						<BillRefResets e-dtype="int">0</BillRefResets>
+						<OpenItemId e-dtype="int">101</OpenItemId>
+				</InvoiceAdjustmentTotalGet>
+			</Adjustment>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

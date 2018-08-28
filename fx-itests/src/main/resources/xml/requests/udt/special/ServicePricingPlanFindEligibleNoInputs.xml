@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<ProductCatalog>
+				<RequestId e-dtype="string">ServicePricingPlanFindEligible</RequestId>
+				<ServicePricingPlanFindEligible>
+				</ServicePricingPlanFindEligible>
+			</ProductCatalog>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">coreuser</OperatorName>
+		<ApplicationName e-dtype="string">CORE</ApplicationName>
+		<UserName e-dtype="string">CSRUser</UserName>
+		<TenantId e-dtype="int">2</TenantId>
+		<AccountServer e-dtype="int">3</AccountServer>
+	</Header>
+	<EntityFind>
+		<AccountInternalId e-dtype="int">11881</AccountInternalId>
+		<ServiceInternalId e-dtype="int">1426</ServiceInternalId>
+		<ServiceInternalIdResets e-dtype="int">0</ServiceInternalIdResets>
+		<EffectiveDate e-dtype="datetime">2018-03-26 00:00:00</EffectiveDate>
+	</EntityFind>
+</Request>

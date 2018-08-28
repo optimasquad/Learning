@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Request xmlns:aruba="ARUBA" xmlns:csg="CSG" xmlns:xsi="xmlSchema">
+    <Header>
+        <AccountServer e-dtype="int">3</AccountServer>
+        <ApplicationName e-dtype="string">TestTA</ApplicationName>
+        <OperatorName e-dtype="string">alyt01</OperatorName>
+        <ExecutionTrace e-dtype="boolean">true</ExecutionTrace>
+        <Debug e-dtype="boolean">true</Debug>
+    </Header>
+    <CustomerUdtRequest>
+        <RequestList e-dtype="list">
+            <!-- ################################################################## -->
+            <!-- FIRST REQUEST:
+                Create an Account and use SubRequests to add an Account-level
+                Product, a Service, and a Service-level Product to that Account -->
+            <!-- ################################################################## -->
+            <OrderedAccount>
+                <OrderedAccountCreate>
+                    <Account>
+                        <AccountCategory e-dtype="int">2</AccountCategory>
+                        <BillLname e-dtype="string">Johanson</BillLname>
+                        <BillFname e-dtype="string">Alberto</BillFname>
+                        <BillAddress1 e-dtype="string">123 South St.</BillAddress1>
+                    </Account>
+                    <VerboseResponse e-dtype="boolean">true</VerboseResponse>
+                </OrderedAccountCreate>
+                <RequestId e-dtype="string">MyNewAccountRequest</RequestId>
+                <!-- BEGIN LEVEL 1 SUBREQUEST ============================================= -->
+                <SubRequest e-dtype="list">
+                    <!-- ====================================================================== -->
+                    <!-- 1st SubRequest element: Create an Account-level Product -->
+                    <!-- ################################################################## -->
+                    <OrderedProduct>
+                        <RelationshipId e-dtype="string">OrderedAccount_OrderedProduct_Ref</RelationshipId>
+                        <OrderedProductCreate>
+                            <Product>
+                                <!-- No need to specify <AccountInternalId> b/c of OrderedAccount_OrderedProduct_Ref -->
+                                <BillingAccountInternalId>
+                                    <Ref e-dtype="string">MyNewAccountRequest/Account/Key/AccountInternalId</Ref>
+                                </BillingAccountInternalId>
+                                <ElementId e-dtype="int">4</ElementId>
+                                <ViewStatus e-dtype="int">1</ViewStatus>
+                                <OpenItemId e-dtype="int">15000</OpenItemId>
+                            </Product>
+                            <FindExistingSO e-dtype="boolean">true</FindExistingSO>
+                        </OrderedProductCreate>
+                        <RequestId e-dtype="string">MyNewProduct1Request</RequestId>
+                    </OrderedProduct>
+                    <!-- 2nd SubRequest element: Create a Service for the Account -->
+                    <!-- ################################################################## -->
+                    <OrderedService>
+                        <RelationshipId e-dtype="string">OrderedAccount_OrderedService_Ref</RelationshipId>
+                        <OrderedServiceCreate>
+                            <Service>
+                                <!-- No need to specify <ParentAccountInternalId> -->
+                                <EmfConfigId e-dtype="int">200</EmfConfigId>
+                                <ViewStatus e-dtype="int">1</ViewStatus>
+                                <DisplayExternalIdType e-dtype="int">1</DisplayExternalIdType>
+                                <PrivacyLevel e-dtype="int">0</PrivacyLevel>
+                                <RevRcvCostCtr e-dtype="int">1</RevRcvCostCtr>
+                                <City e-dtype="string">Cambridge</City>
+                                <State e-dtype="string">MA</State>
+                                <PostalCode e-dtype="string">02142</PostalCode>
+                            </Service>
+                            <VerboseResponse e-dtype="boolean">true</VerboseResponse>
+                        </OrderedServiceCreate>
+                        <RequestId e-dtype="string">MyNewServiceRequest</RequestId>
+                        <!-- BEGIN LEVEL 2 SUBREQUEST ============================================= -->
+                        <SubRequest e-dtype="list">
+                            <!-- ====================================================================== -->
+                            <!-- 1st SubRequest element: Create a Service-level Product for the Service -->
+                            <!-- ################################################################## -->
+                            <OrderedProduct>
+                                <RelationshipId e-dtype="string">OrderedService_OrderedProduct_Ref</RelationshipId>
+                                <!-- Add an InputRequest so we can map fields from MyNewAccountRequest, too -->
+                                <InputRequest>
+                                    <RequestId e-dtype="string">MyNewAccountRequest</RequestId>
+                                    <RelationshipId e-dtype="string">OrderedAccount_OrderedProduct_Ref</RelationshipId>
+                                </InputRequest>
+                                <OrderedProductCreate>
+                                    <Product>
+                                        <BillingAccountInternalId>
+                                            <Ref e-dtype="string">MyNewAccountRequest/Account/Key/AccountInternalId</Ref>
+                                        </BillingAccountInternalId>
+                                        <ParentAccountInternalId>
+                                            <Ref e-dtype="string">MyNewAccountRequest/Account/Key/AccountInternalId</Ref>
+                                        </ParentAccountInternalId>
+                                        <!-- No need to specify <ParentServiceInternalId> b/c of Service_Product_Ref -->
+                                        <!-- No need to specify <ParentServiceInternalIdResets> b/c of Service_Product_Ref -->
+                                        <!-- No need to specify <BillingAccountInternalId> b/c of Account_Product_Ref -->
+                                        <ElementId e-dtype="int">100</ElementId>
+                                        <ViewStatus e-dtype="int">1</ViewStatus>
+                                        <OpenItemId e-dtype="int">15000</OpenItemId>
+                                    </Product>
+                                    <FindExistingSO e-dtype="boolean">true</FindExistingSO>
+                                </OrderedProductCreate>
+                                <RequestId e-dtype="string">MyNewProduct2Request</RequestId>
+                            </OrderedProduct>
+                            <!-- END LEVEL 2 SUBREQUEST =========================================== -->
+                        </SubRequest>
+                        <!-- ================================================================== -->
+                    </OrderedService>
+                    <!-- END LEVEL 1 SUBREQUEST =========================================== -->
+                </SubRequest>
+                <!-- ================================================================== -->
+            </OrderedAccount>
+            <!-- ################################################################## -->
+            <!-- SECOND REQUEST: Commit the Order -->
+            <!-- ################################################################## -->
+            <Order>
+                <OrderCommit>
+                    <Order>
+                        <Key>
+                            <OrderId>
+                                88 Appendix A Sample Calls
+                                UDT-3.0-UDTG-2007-01-31
+                                <Ref e-dtype="string">MyNewAccountRequest/Order/Key/OrderId</Ref>
+                            </OrderId>
+                        </Key>
+                    </Order>
+                </OrderCommit>
+            </Order>
+        </RequestList>
+    </CustomerUdtRequest>
+</Request>

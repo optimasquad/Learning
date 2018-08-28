@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<ServiceOrderFind>
+		<ServiceOrder>
+			<Fetch e-dtype="boolean">true</Fetch>
+			<OrderId>
+				<Equal e-dtype="numeric">608003</Equal>
+			</OrderId>
+			<OrderStatusId>
+				<LessThan e-dtype="int">99</LessThan>
+			</OrderStatusId>
+		</ServiceOrder>
+	</ServiceOrderFind>
+</Request>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns="CSG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <AccountServer e-dtype="string"/>
+    <ApplicationName e-dtype="string">DOMTest</ApplicationName>
+    <OperatorName e-dtype="string">domtest</OperatorName>
+    <TenantId e-dtype="int">2</TenantId>
+  </Header>
+  <AccountSegmentFindResponse>
+    <AccountSegmentList e-dtype="list">
+      <AccountSegment>
+        <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+        <DisplayValue e-dtype="string">Foxtel</DisplayValue>
+        <IsDefault e-dtype="boolean">false</IsDefault>
+        <IsInternal e-dtype="boolean">false</IsInternal>
+        <ShortDisplay e-dtype="string">FOX</ShortDisplay>
+        <Key>
+          <AccountSegmentId e-dtype="int">1</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+        <DisplayValue e-dtype="string">Staff</DisplayValue>
+        <IsDefault e-dtype="boolean">false</IsDefault>
+        <IsInternal e-dtype="boolean">false</IsInternal>
+        <ShortDisplay e-dtype="string">STA</ShortDisplay>
+        <Key>
+          <AccountSegmentId e-dtype="int">2</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+        <DisplayValue e-dtype="string">Admin</DisplayValue>
+        <IsDefault e-dtype="boolean">false</IsDefault>
+        <IsInternal e-dtype="boolean">false</IsInternal>
+        <ShortDisplay e-dtype="string">ADM</ShortDisplay>
+        <Key>
+          <AccountSegmentId e-dtype="int">3</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+        <DisplayValue e-dtype="string">Business</DisplayValue>
+        <IsDefault e-dtype="boolean">false</IsDefault>
+        <IsInternal e-dtype="boolean">false</IsInternal>
+        <ShortDisplay e-dtype="string">BUS</ShortDisplay>
+        <Key>
+          <AccountSegmentId e-dtype="int">4</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+    </AccountSegmentList>
+    <Count e-dtype="int">4</Count>
+    <Index e-dtype="int">0</Index>
+    <TotalCount e-dtype="int">4</TotalCount>
+  </AccountSegmentFindResponse>
+</Request>

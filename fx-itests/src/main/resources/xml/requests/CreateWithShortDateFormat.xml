@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domtest</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domtest</UserName>
+		<TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<NrcCreate>
+		<Nrc>
+			<BillingAccountInternalId e-dtype="int">208</BillingAccountInternalId>
+			<RateDt e-dtype="dateTime">2014-11-02</RateDt>
+			<EffectiveDate e-dtype="dateTime">2014-11-02</EffectiveDate>
+			<CurrencyCode e-dtype="int">1</CurrencyCode>
+			<Rate e-dtype="numeric">1234</Rate>
+			<!--Cost e-dtype="numeric">20</Cost-->
+			<ParentServiceInternalId e-dtype="int">170</ParentServiceInternalId>
+			<ParentServiceInternalIdResets e-dtype="int">0</ParentServiceInternalIdResets>
+			<TotalInstallments e-dtype="int">0</TotalInstallments>
+			<TypeIdNrc e-dtype="int">76123002</TypeIdNrc>
+			<NrcCategory e-dtype="int">1</NrcCategory>
+			<UnitsType e-dtype="int">400</UnitsType>
+			<RateUnits e-dtype="int">8</RateUnits>
+			<ProductTrackingId e-dtype="int">192</ProductTrackingId>
+			<ProductTrackingIdServ e-dtype="int">3</ProductTrackingIdServ>
+			<ViewStatus e-dtype="int">2</ViewStatus>
+		</Nrc>
+	</NrcCreate>
+</Request>

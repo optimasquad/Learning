@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+  <Header>
+    <OperatorName e-dtype="string">coreuser</OperatorName>
+    <ApplicationName e-dtype="string">CORE</ApplicationName>
+    <UserName e-dtype="string">coretest2</UserName>
+  </Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<Service>
+				<ServiceExtendedDataFind>
+					<Fetch e-dtype="boolean">true</Fetch>
+					<Service>
+						<Key>
+							<ViewId e-dtype="numeric">1257003</ViewId>
+						</Key>
+					</Service>
+				</ServiceExtendedDataFind>
+			</Service>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

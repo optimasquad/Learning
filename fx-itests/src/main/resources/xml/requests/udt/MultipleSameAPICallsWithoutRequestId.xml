@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+		<TenantId e-dtype="int">2</TenantId>
+		<AccountServer e-dtype="int">3</AccountServer>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<AccountLocate>
+				<AccountLocateGet>
+					<AccountLocate>
+					<Key>
+						<AccountInternalId e-dtype="numeric">11881</AccountInternalId>
+					</Key>
+					</AccountLocate>
+				</AccountLocateGet>
+			</AccountLocate>
+			<AccountLocate>
+				<AccountLocateGet>
+					<AccountLocate>
+					<Key>
+					<AccountInternalId e-dtype="numeric">11882</AccountInternalId>
+					</Key>
+					</AccountLocate>
+				</AccountLocateGet>
+			</AccountLocate>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<DebugFlag e-dtype="int">1</DebugFlag>
+		<OperatorName e-dtype="string">tarborsv</OperatorName>
+		<AccountServer e-dtype="int">3</AccountServer>"
+		<TenantId e-dtype="int">2</TenantId>"
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<StoredProcedure>
+			<StoredProcedureCall>
+				<StoredProcedureCall>
+					<StoredProcedureName e-dtype="string">GET_ACNT_NO</StoredProcedureName>
+					<InputParameterList e-dtype="list">
+						<InputParameter>
+							<Name e-dtype="string">subscr_no_resets</Name>
+							<Type e-dtype="string">INT32</Type>
+						</InputParameter>
+						<InputParameter>
+							<Name e-dtype="string">subscr_no</Name>
+							<Type e-dtype="string">INT32</Type>
+						</InputParameter>
+					</InputParameterList>
+					<OutputParameterList e-dtype="list">
+						<OutputParameter>
+							<Name e-dtype="string">account_no</Name>
+							<Type e-dtype="string">INT32</Type>
+						</OutputParameter>
+					</OutputParameterList>
+					<InputParameters>
+						<subscr_no_resets e-dtype="int">0</subscr_no_resets>
+						<subscr_no e-dtype="int">10</subscr_no>
+					</InputParameters>
+				</StoredProcedureCall>
+			</StoredProcedureCall>
+			</StoredProcedure>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

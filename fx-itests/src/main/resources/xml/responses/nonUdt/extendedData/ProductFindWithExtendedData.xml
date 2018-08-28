@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<ProductFindWithExtendedData>
+		<Product>
+			<Fetch e-dtype="boolean">true</Fetch>
+			<Key>
+				<ViewId>
+					<Equal e-dtype="numeric">422003</Equal>
+				</ViewId>
+			</Key>
+		</Product>
+	</ProductFindWithExtendedData>
+</Request>

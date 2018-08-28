@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<ProductElement>
+				<ProductElementRate>
+					<ElementId e-dtype="int">10051</ElementId>
+					<RateClass e-dtype="int">10051</RateClass>
+					<CurrencyCode e-dtype="int">1</CurrencyCode>
+					<ExrateClass e-dtype="int">10051</ExrateClass>
+					<EquipType e-dtype="int">10051</EquipType>
+					<EquipClass e-dtype="int">10051</EquipClass>
+					<EquipCos e-dtype="int">10051</EquipCos>
+					<ComponentId e-dtype="int">10051</ComponentId>
+					<BillingFrequency e-dtype="int">10051</BillingFrequency>
+					<BillPeriod e-dtype="string">M01</BillPeriod>
+					<PopUnits e-dtype="int">10051</PopUnits>
+					<Units e-dtype="int">10051</Units>
+					<Jurisdiction e-dtype="int">10051</Jurisdiction>
+					<EffectiveDate e-dtype="datetime">2018-03-01</EffectiveDate>
+				</ProductElementRate>
+			</ProductElement>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

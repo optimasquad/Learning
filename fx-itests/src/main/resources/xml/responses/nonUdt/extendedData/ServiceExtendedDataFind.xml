@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<ServiceExtendedDataFind>
+		<Fetch e-dtype="boolean">true</Fetch>
+		<Service>
+			<Key>
+				<ViewId e-dtype="numeric">1257003</ViewId>
+			</Key>
+		</Service>
+	</ServiceExtendedDataFind>
+</Request>

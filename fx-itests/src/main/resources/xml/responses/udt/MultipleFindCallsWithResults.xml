@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+		<TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<ServiceAddressAssoc>
+				<ServiceAddressAssocFind>
+					<ServiceAddressAssoc>
+						<Fetch e-dtype="boolean">true</Fetch>
+						<AddressId>
+							<!-- <Equal e-dtype="numeric">6001</Equal> -->
+							<Equal e-dtype="numeric">1001</Equal>
+						</AddressId>
+						<InactiveDt>
+							<GreaterThanEqual e-dtype="dateTime">2018-02-01 00:00:00</GreaterThanEqual>
+							<IsNull/>
+						</InactiveDt>
+						<AssociationStatus>
+							<In e-dtype="list">
+								<AssociationStatus e-dtype="int">1</AssociationStatus>
+								<AssociationStatus e-dtype="int">2</AssociationStatus>
+							</In>
+						</AssociationStatus>
+					</ServiceAddressAssoc>
+				</ServiceAddressAssocFind>
+			</ServiceAddressAssoc>
+			<GeoAreaAddressAssoc>
+				<GeoAreaAddressAssocFind>
+					<GeoAreaAddressAssoc>
+						<Fetch e-dtype="boolean">true</Fetch>
+						<AddressId>
+							<!-- <Equal e-dtype="numeric">6001</Equal> -->
+							<Equal e-dtype="numeric">5346192001</Equal>
+						</AddressId>
+						<IsActive>
+							<Equal e-dtype="boolean">true</Equal>
+						</IsActive>
+					</GeoAreaAddressAssoc>
+				</GeoAreaAddressAssocFind>
+			</GeoAreaAddressAssoc>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

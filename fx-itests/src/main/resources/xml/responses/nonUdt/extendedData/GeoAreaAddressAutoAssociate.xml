@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<GeoAreaAddressAutoAssociate>
+		<AddressId e-dtype="int">341003</AddressId>
+		<BoundaryId e-dtype="int"/>
+		<EnableAsync e-dtype="int">0</EnableAsync>
+		<Email e-dtype="string">test@test.com</Email>
+	</GeoAreaAddressAutoAssociate>
+</Request>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<AdjustmentTypeEligibleFind>
+		<UnbilledUsage></UnbilledUsage>
+		<BilledUsage></BilledUsage>
+		<InvoiceDetail></InvoiceDetail>
+		<BalanceLineItem></BalanceLineItem>
+		<Invoice>
+			<AccountInternalId e-dtype="int">1</AccountInternalId>
+		</Invoice>
+		<LanguageCode e-dtype="int">1</LanguageCode>
+	</AdjustmentTypeEligibleFind>
+</Request>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<OrderFindWithExtendedData>
+		<Order>
+			<Key>
+				<Fetch e-dtype="true">true</Fetch>
+				<OrderId><Equal e-dtype="numeric">813003</Equal></OrderId>
+			</Key>
+		</Order>
+	</OrderFindWithExtendedData>
+</Request>

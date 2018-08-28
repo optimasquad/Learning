@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<ServicePricingPlanFindEligible>
+		<Fetch e-dtype="boolean">true</Fetch>
+		<EffectiveDate e-dtype="dateTime">2018-01-29</EffectiveDate>
+		<AddressId e-dtype="numeric">581003</AddressId>
+		<IndustryTypeList e-dtype="list">
+			<IndustryType e-dtype="int">1</IndustryType>
+			<IndustryType e-dtype="int">2</IndustryType>
+			<IndustryType e-dtype="int">3</IndustryType>
+		</IndustryTypeList>
+		<ServicePricingPlan>
+			<Fetch e-dtype="boolean">true</Fetch>
+		</ServicePricingPlan>
+	</ServicePricingPlanFindEligible>
+</Request>

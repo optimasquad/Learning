@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domtest</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domtest</UserName>
+		<TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<ServiceAddressAssocFind>
+		<ServiceAddressAssoc>
+			<Fetch e-dtype="boolean">true</Fetch>
+			<InactiveDt>
+				<LessThanEqual e-dtype="dateTime">2017-01-01</LessThanEqual>
+			</InactiveDt>
+		</ServiceAddressAssoc>
+	</ServiceAddressAssocFind>
+</Request>

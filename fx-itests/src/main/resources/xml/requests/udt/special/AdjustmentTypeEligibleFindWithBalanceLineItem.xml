@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">csrtrain9</OperatorName>
+		<ApplicationName e-dtype="string">CORE</ApplicationName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<AdjustmentType>
+				<AdjustmentTypeEligibleFind>
+						<UnbilledUsage></UnbilledUsage>
+						<BilledUsage></BilledUsage>
+						<InvoiceDetail></InvoiceDetail>
+						<BalanceLineItem>
+							<OpenItemId e-dtype="int">101</OpenItemId>
+						</BalanceLineItem>
+						<Invoice></Invoice>
+						<LanguageCode e-dtype="int">1</LanguageCode>
+				</AdjustmentTypeEligibleFind>
+			</AdjustmentType>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

@@ -1,0 +1,165 @@
+<Request>
+    <Header>
+        <OperatorName e-dtype="string">domuser</OperatorName>
+        <ApplicationName e-dtype="string">DOMTest</ApplicationName>
+        <UserName e-dtype="string">CSRUser</UserName>
+         <TenantId e-dtype="int">2</TenantId>
+    </Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<Ppv>
+    <PpvOfferValidate>
+        <AccountIn>
+            <AccountInternalId e-dtype="int">3542</AccountInternalId>
+            <PpvServiceList e-dtype="list">
+                <PpvService>
+                    <CtcScheduleList e-dtype="list">
+                        <CtcSchedule>
+                            <ContentTypeId e-dtype="int">1</ContentTypeId>
+                            <DisplayValue e-dtype="string">Main Event</DisplayValue>
+                            <IsDefault e-dtype="boolean">false</IsDefault>
+                            <IsInternal e-dtype="boolean">false</IsInternal>
+                            <IsServiceabilityApplicable e-dtype="boolean">true</IsServiceabilityApplicable>
+                            <Key>
+                                <LanguageCode e-dtype="int">1</LanguageCode>
+                                <ScheduleId e-dtype="int">2</ScheduleId>
+                            </Key>
+                            <PScheduleId e-dtype="int">2</PScheduleId>
+                            <ShortDisplay e-dtype="string">ME</ShortDisplay>
+                        </CtcSchedule>
+                    </CtcScheduleList>
+                    <AddressId e-dtype="numeric">81459998001</AddressId>
+                    <Key>
+                        <ViewId e-dtype="numeric">17676910003</ViewId>
+                    </Key>
+                    <PpvOutletList e-dtype="list">
+                        <PpvOutlet>
+                            <AccountId e-dtype="int">10229267</AccountId>
+                            <AdultBit e-dtype="string">1</AdultBit>
+                            <BlacklistReasonId e-dtype="int">0</BlacklistReasonId>
+                            <Description e-dtype="string">PPV Enabled</Description>
+                            <EquipmentConditionId e-dtype="int">1</EquipmentConditionId>
+                            <EquipmentConditionNotes e-dtype="string">1</EquipmentConditionNotes>
+                            <ExtDataCode e-dtype="int">0</ExtDataCode>
+                            <ExternalId e-dtype="string">40248112613</ExternalId>
+                            <InventoryId e-dtype="int">11316845</InventoryId>
+                            <InventoryIdResets e-dtype="int">0</InventoryIdResets>
+                            <InventoryLineId e-dtype="int">100</InventoryLineId>
+                            <InventoryTypeId e-dtype="int">102</InventoryTypeId>
+                            <IsAssignable e-dtype="boolean">true</IsAssignable>
+                            <IsCustomerOwned e-dtype="boolean">false</IsCustomerOwned>
+                            <IsDonated e-dtype="boolean">false</IsDonated>
+                            <IsInitialised e-dtype="boolean">false</IsInitialised>
+                            <IsItem e-dtype="boolean">true</IsItem>
+                            <LocationDetailId e-dtype="int">46</LocationDetailId>
+                            <LocationId e-dtype="int">11</LocationId>
+                            <MaskPpvTitle e-dtype="boolean">false</MaskPpvTitle>
+                            <ParamA e-dtype="int">85033490</ParamA>
+                            <ParamB e-dtype="int">0</ParamB>
+                            <ParamDatatype e-dtype="int">2</ParamDatatype>
+                            <ParamId e-dtype="int">8015</ParamId>
+                            <PortabilityIndicator e-dtype="int">0</PortabilityIndicator>
+                            <ResponsiblePartyId e-dtype="int">49</ResponsiblePartyId>
+                            <SerialNumber e-dtype="string">40248112613</SerialNumber>
+                            <StartDateTime e-dtype="dateTime">2013-07-23 19:46:56</StartDateTime>
+                            <State e-dtype="int">0</State>
+                            <StatusId e-dtype="int">2</StatusId>
+                            <ViewId e-dtype="numeric">92968585</ViewId>
+                        </PpvOutlet>
+                    </PpvOutletList>
+                    <ServiceInternalId e-dtype="int">85033490</ServiceInternalId>
+                    <ServiceInternalIdResets e-dtype="int">0</ServiceInternalIdResets>
+                </PpvService>
+                <PpvService>
+                    <CtcScheduleList e-dtype="list">
+                        <CtcSchedule>
+                            <ContentTypeId e-dtype="int">1</ContentTypeId>
+                            <DisplayValue e-dtype="string">Main Event</DisplayValue>
+                            <IsDefault e-dtype="boolean">false</IsDefault>
+                            <IsInternal e-dtype="boolean">false</IsInternal>
+                            <IsServiceabilityApplicable e-dtype="boolean">true</IsServiceabilityApplicable>
+                            <Key>
+                                <LanguageCode e-dtype="int">1</LanguageCode>
+                                <ScheduleId e-dtype="int">2</ScheduleId>
+                            </Key>
+                            <PScheduleId e-dtype="int">2</PScheduleId>
+                            <ShortDisplay e-dtype="string">ME</ShortDisplay>
+                        </CtcSchedule>
+                    </CtcScheduleList>
+                    <AddressId e-dtype="numeric">81459998001</AddressId>
+                    <Key>
+                        <ViewId e-dtype="numeric">17676907003</ViewId>
+                    </Key>
+                    <PpvOutletList e-dtype="list">
+                        <PpvOutlet>
+                            <AccountId e-dtype="int">10229267</AccountId>
+                            <AdultBit e-dtype="string">1</AdultBit>
+                            <BlacklistReasonId e-dtype="int">0</BlacklistReasonId>
+                            <Description e-dtype="string">PPV Enabled</Description>
+                            <EquipmentConditionId e-dtype="int">1</EquipmentConditionId>
+                            <EquipmentConditionNotes e-dtype="string">Notes</EquipmentConditionNotes>
+                            <ExtDataCode e-dtype="int">0</ExtDataCode>
+                            <ExternalId e-dtype="string">000203416987</ExternalId>
+                            <InventoryId e-dtype="int">6057926</InventoryId>
+                            <InventoryIdResets e-dtype="int">0</InventoryIdResets>
+                            <InventoryLineId e-dtype="int">100</InventoryLineId>
+                            <InventoryTypeId e-dtype="int">101</InventoryTypeId>
+                            <IsAssignable e-dtype="boolean">true</IsAssignable>
+                            <IsCustomerOwned e-dtype="boolean">false</IsCustomerOwned>
+                            <IsDonated e-dtype="boolean">false</IsDonated>
+                            <IsInitialised e-dtype="boolean">false</IsInitialised>
+                            <IsItem e-dtype="boolean">true</IsItem>
+                            <LocationDetailId e-dtype="int">63</LocationDetailId>
+                            <LocationId e-dtype="int">1</LocationId>
+                            <MaskPpvTitle e-dtype="boolean">false</MaskPpvTitle>
+                            <ParamA e-dtype="int">85033487</ParamA>
+                            <ParamB e-dtype="int">0</ParamB>
+                            <ParamDatatype e-dtype="int">2</ParamDatatype>
+                            <ParamId e-dtype="int">8015</ParamId>
+                            <PortabilityIndicator e-dtype="int">0</PortabilityIndicator>
+                            <ResponsiblePartyId e-dtype="int">6</ResponsiblePartyId>
+                            <SerialNumber e-dtype="string">000203416987</SerialNumber>
+                            <StartDateTime e-dtype="dateTime">2017-09-15 10:35:34</StartDateTime>
+                            <State e-dtype="int">1</State>
+                            <StatusId e-dtype="int">2</StatusId>
+                            <ViewId e-dtype="numeric">154610504</ViewId>
+                        </PpvOutlet>
+                    </PpvOutletList>
+                    <ServiceInternalId e-dtype="int">85033487</ServiceInternalId>
+                    <ServiceInternalIdResets e-dtype="int">0</ServiceInternalIdResets>
+                </PpvService>
+            </PpvServiceList>
+        </AccountIn>
+        <Offer>
+            <AdultFg e-dtype="boolean">false</AdultFg>
+            <ChgCode e-dtype="int">1</ChgCode>
+            <ChgDt e-dtype="dateTime">2018-03-07 07:59:41</ChgDt>
+            <ContentTypeId e-dtype="int">1</ContentTypeId>
+            <DisplayName e-dtype="string">Whyte vs Browne</DisplayName>
+            <DisplayStartDt e-dtype="dateTime">2018-03-25 04:00:00</DisplayStartDt>
+            <EndDt e-dtype="dateTime">2018-03-27 05:00:00</EndDt>
+            <FfId e-dtype="int">9500</FfId>
+            <IsDeleted e-dtype="boolean">false</IsDeleted>
+            <Key>
+                <LangCode e-dtype="int">1</LangCode>
+                <OfferId e-dtype="int">7726531</OfferId>
+            </Key>
+            <LastCancelDt e-dtype="dateTime">2018-03-25 04:00:00</LastCancelDt>
+            <POfferId e-dtype="int">3289858</POfferId>
+            <PrimaryCategoryId e-dtype="int">1</PrimaryCategoryId>
+            <ScheduleId e-dtype="int">2</ScheduleId>
+            <StartDt e-dtype="dateTime">2018-03-25 04:00:00</StartDt>
+            <TapingFg e-dtype="int">0</TapingFg>
+            <Version e-dtype="int">1</Version>
+        </Offer>
+        <OrderMethod>
+            <Key>
+                <LanguageCode e-dtype="int">1</LanguageCode>
+                <OrderMethodId e-dtype="int">1</OrderMethodId>
+            </Key>
+        </OrderMethod>
+    </PpvOfferValidate>
+    		</Ppv>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

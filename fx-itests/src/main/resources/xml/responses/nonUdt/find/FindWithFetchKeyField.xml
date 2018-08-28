@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns="CSG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <AccountServer e-dtype="string">3</AccountServer>
+    <ApplicationName e-dtype="string">Foxtel_WS</ApplicationName>
+    <OperatorName e-dtype="string">playuser</OperatorName>
+    <TenantId e-dtype="int"/>
+    <DebugFlag e-dtype="boolean">true</DebugFlag>
+  </Header>
+  <AccountSegmentFindResponse>
+    <AccountSegmentList e-dtype="list">
+      <AccountSegment>
+        <Key>
+          <AccountSegmentId e-dtype="int">1</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <Key>
+          <AccountSegmentId e-dtype="int">2</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <Key>
+          <AccountSegmentId e-dtype="int">3</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <Key>
+          <AccountSegmentId e-dtype="int">4</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <Key>
+          <AccountSegmentId e-dtype="int">20</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <Key>
+          <AccountSegmentId e-dtype="int">30</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <Key>
+          <AccountSegmentId e-dtype="int">40</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+    </AccountSegmentList>
+    <Count e-dtype="int">7</Count>
+    <Index e-dtype="int">0</Index>
+    <TotalCount e-dtype="int">7</TotalCount>
+  </AccountSegmentFindResponse>
+</Request>

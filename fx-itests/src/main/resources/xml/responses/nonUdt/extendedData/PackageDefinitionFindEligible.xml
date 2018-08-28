@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">coreuser</OperatorName>
+		<ApplicationName e-dtype="string">CORE</ApplicationName>
+		<UserName e-dtype="string">CSRUser</UserName>
+	</Header>
+	<PackageDefinitionFindEligible>
+		<Fetch e-dtype="boolean">true</Fetch>
+		<AddressId e-dtype="numeric">4565881001</AddressId>
+		<EntityList e-dtype="list">
+			<Entity>
+				<Key>
+					<EntityTypeId e-dtype="int">3</EntityTypeId>
+					<EntityPk e-dtype="numeric">1</EntityPk>
+				</Key>
+			</Entity>
+			<Entity>
+				<Key>
+					<EntityTypeId e-dtype="int">5</EntityTypeId>
+					<EntityPk e-dtype="numeric">1</EntityPk>
+				</Key>
+			</Entity>
+			<Entity>
+				<Key>
+					<EntityTypeId e-dtype="int">4</EntityTypeId>
+					<EntityPk e-dtype="numeric">1000</EntityPk>
+				</Key>
+			</Entity>
+		</EntityList>
+		<IndustryTypeList e-dtype="list">
+			<IndustryType e-dtype="int">1</IndustryType>
+			<IndustryType e-dtype="int">2</IndustryType>
+			<IndustryType e-dtype="int">3</IndustryType>
+		</IndustryTypeList>
+		<PackageDefinition>
+			<Fetch e-dtype="boolean">true</Fetch>
+		</PackageDefinition>
+	</PackageDefinitionFindEligible>
+</Request>

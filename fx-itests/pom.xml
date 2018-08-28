@@ -1,0 +1,726 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fx-itests</groupId>
+	<artifactId>fx-itests</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>fx-itests Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+
+		<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>jcl-over-slf4j</artifactId> 
+			<version>1.5.8</version> </dependency> <dependency> <groupId>org.slf4j</groupId> 
+			<artifactId>slf4j-api</artifactId> <version>1.5.8</version> </dependency> 
+			<dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
+			<version>1.5.8</version> </dependency> -->
+		<!-- <dependency> <groupId>log4j</groupId> <artifactId>log4j</artifactId> 
+			<version>1.2.14</version> </dependency> -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.0.3.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- <dependency> <groupId>org.springframework.batch</groupId> <artifactId>spring-batch-core</artifactId> 
+			<version>3.0.5.RELEASE</version> </dependency> -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.9.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>javax.transaction-api</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- Hibernate with validator and jpa support -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.2.2.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>5.0.4.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.0.4.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.17.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.webjars</groupId> <artifactId>bootstrap</artifactId> 
+			<version>3.3.6</version> </dependency> <dependency> <groupId>org.webjars</groupId> 
+			<artifactId>jquery</artifactId> <version>2.2.3</version> </dependency> <dependency> 
+			<groupId>org.webjars</groupId> <artifactId>font-awesome</artifactId> <version>4.6.2</version> 
+			</dependency> <dependency> <groupId>org.webjars</groupId> <artifactId>webjars-locator</artifactId> 
+			<version>0.31</version> </dependency> -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.6.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.6.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.6.3</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.glassfish.metro</groupId> <artifactId>webservices-rt</artifactId> 
+			<version>2.3.1</version> </dependency> <dependency> <groupId>org.glassfish.metro</groupId> 
+			<artifactId>webservices-api</artifactId> <version>2.3.1</version> <scope>provided</scope> 
+			</dependency> -->
+		<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
+			<version>5.1.37</version> </dependency> -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\activation.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>ArborDomainFwk</groupId>
+			<artifactId>ArborDomainFwk</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\ArborDomainFwk-14.5.20180118.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>axis</groupId>
+			<artifactId>axis</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\axis.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>bsf</groupId>
+			<artifactId>bsf</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\bsf-2.3.0.jar</systemPath>
+		</dependency>
+
+
+		<!-- <dependency> <groupId>commons-beanutils</groupId> <artifactId>commons-beanutils</artifactId> 
+			<version>1.0</version> <scope>system</scope> <systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\commons-beanutils-1.9.2.jar</systemPath> 
+			</dependency> -->
+
+		<dependency>
+			<groupId>commons-cli</groupId>
+			<artifactId>commons-cli</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\commons-cli-1.0.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\commons-collections-3.2.1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\commons-digester-1.7.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-discovery</groupId>
+			<artifactId>commons-discovery</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\commons-discovery.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-discovery</groupId>
+			<artifactId>commons-discovery</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\commons-discovery.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\commons-lang-2.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\commons-logging-1.0.4.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>customercenter</groupId>
+			<artifactId>customercenter</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\CustomerCenter-14.6.20180208.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>CWBC-DSKX</groupId>
+			<artifactId>CWBC-DSKX</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\CWBC-DSKX-421.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>DomainFwk</groupId>
+			<artifactId>DomainFwk</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\DomainFwk-14.0.20170525.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>DomainUIFwk</groupId>
+			<artifactId>DomainUIFwk</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\DomainUIFwk-8.0.20150131.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>ecs</groupId>
+			<artifactId>ecs</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\ecs-1.4.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>FwkUtils</groupId>
+			<artifactId>FwkUtils</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\FwkUtils-6.0.20120520.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>FXCCConfig</groupId>
+			<artifactId>FXCCConfig</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\FXCCConfig-6.0.20120520.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>FXCommon</groupId>
+			<artifactId>FXCommon</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\FXCommon-14.0.20170921.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>fx-default-theme-14.0.20161012</groupId>
+			<artifactId>fx-default-theme-14.0.20161012</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\fx-default-theme-14.0.20161012.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>fx-frame</groupId>
+			<artifactId>fx-frame</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\fx-frame-14.0.20170525.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>fx-project</groupId>
+			<artifactId>fx-project</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\fx-project-6.0.20120520.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>fx-pom</groupId>
+			<artifactId>fx-pom</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\fx-pom-6.0.20120520.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>FXSecBPRules</groupId>
+			<artifactId>FXSecBPRules</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\FXSecBPRules-14.0.20161026.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>FXSecFwk</groupId>
+			<artifactId>FXSecFwk</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\FXSecFwk-14.0.20170329_client.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>icu4j</groupId>
+			<artifactId>icu4j</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\icu4j_3_2.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>j2ee</groupId>
+			<artifactId>j2ee</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\j2ee-1.4.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>jaxb-api</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jaxb-api.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>jaxb-impl</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jaxb-impl.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>jaxb-libs</groupId>
+			<artifactId>jaxb-libs</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jaxb-libs.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>jax-qname</groupId>
+			<artifactId>jax-qname</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jax-qname.jar</systemPath>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>jaxrpc</groupId>
+			<artifactId>jaxrpc</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jaxrpc.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>JB-Extended-Data</groupId>
+			<artifactId>JB-Extended-Data</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\JB-Extended-Data-14.4.20171128.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>JB-client</groupId>
+			<artifactId>JB-client</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jboss-client-6.4.0.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>JB-Request-Beans</groupId>
+			<artifactId>JB-Request-Beans</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\JB-Request-Beans-14.6.20180227.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>JB-Requests</groupId>
+			<artifactId>JB-Requests</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\JB-Requests-14.4.20180131.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>JB-Server-Requests</groupId>
+			<artifactId>JB-Server-Requests</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\JB-Server-Requests-14.4.20171128.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>JBTransport</groupId>
+			<artifactId>JBTransport</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\JBTransport-14.0.20161124.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>jcalendar-1.4</groupId>
+			<artifactId>jcalendar-1.4</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jcalendar-1.4.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>jdic-20061102</groupId>
+			<artifactId>jdic-20061102</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jdic-20061102.jar</systemPath>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>jlfgr-1_0</groupId>
+			<artifactId>jlfgr-1_0</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\jlfgr-1_0.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>l2fprod-common-tasks</groupId>
+			<artifactId>l2fprod-common-tasks</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\l2fprod-common-tasks-0.2.20051106.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>looks</groupId>
+			<artifactId>looks</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\looks-1.3.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>mdate</groupId>
+			<artifactId>mdate</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\mdate-1.2.0.2c.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>namespace</groupId>
+			<artifactId>namespace</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\namespace.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>regexp-1.4</groupId>
+			<artifactId>regexp-1.4</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\regexp-1.4.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>relaxngDatatype</groupId>
+			<artifactId>relaxngDatatype</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\relaxngDatatype.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>saaj</groupId>
+			<artifactId>saaj</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\saaj.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>ToolkitDebug</groupId>
+			<artifactId>ToolkitDebug</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\ToolkitDebug-6.0.20120520.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\velocity-1.4.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>waf</groupId>
+			<artifactId>waf</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\waf0_5.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>wlclient</groupId>
+			<artifactId>wlclient</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\wlclient-9.1.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>wpApplet</groupId>
+			<artifactId>wpApplet</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\wpApplet.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>wpClient</groupId>
+			<artifactId>wpClient</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\wpClient.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\wsdl4j.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>xercesImpl</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\xercesImpl-2.6.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>xsdlib</groupId>
+			<artifactId>xsdlib</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_CC_4.1_2\usr1\arbor\fx_suite_base\cc\CustomerCenter\target\exec\xsdlib.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_MW_CORE_20_March\usr1\arbor\local_repo\com\google\code\gson\gson\2.6.2\gson-2.6.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>hamcrest-core</groupId>
+			<artifactId>hamcrest-core</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_MW_CORE_20_March\usr1\arbor\local_repo\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\E\Views\jmahajan_MW_CORE_20_March\usr1\arbor\local_repo\junit\junit\4.12\junit-4.12.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>oracle</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\D\ojdbc7.jar</systemPath>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<finalName>fx-itests</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

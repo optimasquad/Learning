@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domtest</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domtest</UserName>
+		<TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<AccountSegmentFind>
+		<AccountSegment>
+			<Fetch e-dtype="boolean">true</Fetch>
+			<Key>
+				<Fetch e-dtype="boolean">true</Fetch>
+				<AccountSegmentId>
+					<NotIn>
+						<AccountSegmentId e-dtype="int">1</AccountSegmentId>
+						<AccountSegmentId e-dtype="int">2</AccountSegmentId>
+						<AccountSegmentId e-dtype="int">3</AccountSegmentId>
+						<AccountSegmentId e-dtype="int">4</AccountSegmentId>
+					</NotIn>
+				</AccountSegmentId>
+			</Key>
+		</AccountSegment>
+	</AccountSegmentFind>
+</Request>

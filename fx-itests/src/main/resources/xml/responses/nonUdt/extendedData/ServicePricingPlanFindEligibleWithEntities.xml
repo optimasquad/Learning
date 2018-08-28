@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<ServicePricingPlanFindEligible>
+		<Fetch e-dtype="boolean">true</Fetch>
+		<AddressId e-dtype="numeric">581003</AddressId>
+		<EntityList e-dtype="list">
+			<Entity>
+				<Key>
+					<EntityTypeId e-dtype="int">3</EntityTypeId>
+					<EntityPk e-dtype="numeric">1</EntityPk>
+				</Key>
+			</Entity>
+			<Entity>
+				<Key>
+					<EntityTypeId e-dtype="int">5</EntityTypeId>
+					<EntityPk e-dtype="numeric">1</EntityPk>
+				</Key>
+			</Entity>
+			<Entity>
+				<Key>
+					<EntityTypeId e-dtype="int">4</EntityTypeId>
+					<EntityPk e-dtype="numeric">1000</EntityPk>
+				</Key>
+			</Entity>
+		</EntityList>
+		<IndustryTypeList e-dtype="list">
+			<IndustryType e-dtype="int">1</IndustryType>
+			<IndustryType e-dtype="int">2</IndustryType>
+			<IndustryType e-dtype="int">3</IndustryType>
+		</IndustryTypeList>
+		<ServicePricingPlan>
+			<Fetch e-dtype="boolean">true</Fetch>
+		</ServicePricingPlan>
+		<CheckType e-dtype="int">0</CheckType>
+	</ServicePricingPlanFindEligible>
+</Request>

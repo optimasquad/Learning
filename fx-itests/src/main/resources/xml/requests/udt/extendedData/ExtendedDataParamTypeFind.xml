@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<ExtendedDataParamType>
+				<ExtendedDataParamTypeFind>
+					<ExtendedDataParamType>
+						<Fetch e-dtype="boolean">true</Fetch>
+						<BaseTable>
+							<Equal e-dtype="string">CMF</Equal>
+						</BaseTable>
+						<IsRequired>
+							<Equal e-dtype="boolean">true</Equal>
+						</IsRequired>
+					</ExtendedDataParamType>
+				</ExtendedDataParamTypeFind>
+			</ExtendedDataParamType>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

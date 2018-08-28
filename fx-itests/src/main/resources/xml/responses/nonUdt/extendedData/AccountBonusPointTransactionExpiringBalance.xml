@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+	</Header>
+	<AccountBonusPointTransactionExpiringBalance>
+		<AccountInternalId e-dtype="int">10051</AccountInternalId>
+	</AccountBonusPointTransactionExpiringBalance>
+</Request>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+    <Header>
+        <OperatorName e-dtype="string">trainee</OperatorName>
+        <ApplicationName e-dtype="string">DOMExample2.java</ApplicationName>
+        <AccountServer e-dtype="int">3</AccountServer>
+    </Header>
+    <OrderUpdate>
+        <Order>
+            <Key>
+                <OrderId e-dtype="int">813003</OrderId>
+            </Key>
+        </Order>
+        <ExtendedData e-dtype="list">
+        	<ExtendedDataParam>
+        		<ParamId e-dtype="int">9112</ParamId>
+        		<ParamValue e-dtype="any">DOMTEST</ParamValue>
+        		<ParamName e-dtype="string">Foxtel Marketing</ParamName>
+        	</ExtendedDataParam>
+        </ExtendedData>
+    </OrderUpdate>
+</Request>

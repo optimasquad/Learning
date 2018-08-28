@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<CustomerContract>
+				<AccountDisconnectChargeAccountAmountGet>
+					<AccountInternalId e-dtype="int">10051</AccountInternalId>
+					<EffectiveDate e-dtype="datetime">2018-03-01</EffectiveDate>
+				</AccountDisconnectChargeAccountAmountGet>
+			</CustomerContract>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

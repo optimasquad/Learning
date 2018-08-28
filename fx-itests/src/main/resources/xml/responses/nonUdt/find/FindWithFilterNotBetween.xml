@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns="CSG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <AccountServer e-dtype="string"/>
+    <ApplicationName e-dtype="string">DOMTest</ApplicationName>
+    <OperatorName e-dtype="string">domtest</OperatorName>
+    <TenantId e-dtype="int">2</TenantId>
+  </Header>
+  <AccountSegmentFindResponse>
+    <AccountSegmentList e-dtype="list">
+      <AccountSegment>
+        <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+        <DisplayValue e-dtype="string">AAPT</DisplayValue>
+        <IsDefault e-dtype="boolean">false</IsDefault>
+        <IsInternal e-dtype="boolean">false</IsInternal>
+        <ShortDisplay e-dtype="string">APT</ShortDisplay>
+        <Key>
+          <AccountSegmentId e-dtype="int">20</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+        <DisplayValue e-dtype="string">Telstra</DisplayValue>
+        <IsDefault e-dtype="boolean">false</IsDefault>
+        <IsInternal e-dtype="boolean">false</IsInternal>
+        <ShortDisplay e-dtype="string">TEL</ShortDisplay>
+        <Key>
+          <AccountSegmentId e-dtype="int">30</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+      <AccountSegment>
+        <ConfigTagId e-dtype="string">Kenan FX 4.1</ConfigTagId>
+        <DisplayValue e-dtype="string">Excluded</DisplayValue>
+        <IsDefault e-dtype="boolean">false</IsDefault>
+        <IsInternal e-dtype="boolean">false</IsInternal>
+        <ShortDisplay e-dtype="string">EXC</ShortDisplay>
+        <Key>
+          <AccountSegmentId e-dtype="int">40</AccountSegmentId>
+          <LanguageCode e-dtype="int">1</LanguageCode>
+        </Key>
+      </AccountSegment>
+    </AccountSegmentList>
+    <Count e-dtype="int">3</Count>
+    <Index e-dtype="int">0</Index>
+    <TotalCount e-dtype="int">3</TotalCount>
+  </AccountSegmentFindResponse>
+</Request>

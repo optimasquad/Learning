@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<ServiceOrder>
+				<ServiceOrderExtendedDataFind>
+					<Fetch e-dtype="boolean">true</Fetch>
+					<ServiceOrder>
+						<Fetch e-dtype="boolean">true</Fetch>
+						<ServiceOrderId e-dtype="numeric">620010003</ServiceOrderId>
+					</ServiceOrder>
+				</ServiceOrderExtendedDataFind>
+			</ServiceOrder>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

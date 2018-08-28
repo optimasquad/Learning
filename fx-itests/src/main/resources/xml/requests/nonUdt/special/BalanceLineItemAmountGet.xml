@@ -1,0 +1,17 @@
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<BalanceLineItemAmountGet>
+		<BalanceLineItem>
+			<Key>
+				<AccountInternalId e-dtype="int">10051</AccountInternalId>
+				<BillRefNo e-dtype="int">264121743</BillRefNo>
+				<BillRefResets e-dtype="int">0</BillRefResets>
+				<OpenItemId e-dtype="int">101</OpenItemId>
+			</Key>
+		</BalanceLineItem>
+	</BalanceLineItemAmountGet>
+</Request>

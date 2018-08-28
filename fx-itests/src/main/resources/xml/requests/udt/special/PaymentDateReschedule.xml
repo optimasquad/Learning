@@ -1,0 +1,24 @@
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+	     <TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<Invoice>
+				<PaymentDateReschedule>
+					<Invoice>
+						<Key>
+							<BillRefNo e-dtype="int">264121743</BillRefNo>
+							<BillRefResets e-dtype="int">0</BillRefResets>
+							<AccountExternalId e-dtype="string">10051</AccountExternalId>
+							<AccountExternalIdType e-dtype="int">1</AccountExternalIdType>
+						</Key>
+					</Invoice>
+					<PaymentDueDate e-dtype="datetime"></PaymentDueDate>
+				</PaymentDateReschedule>
+			</Invoice>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

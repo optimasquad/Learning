@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">		
+			<Service>
+				<ServiceFindWithExtendedData>
+					<Service>
+						<Fetch e-dtype="boolean">true</Fetch>
+						<Key>
+							<ViewId><Equal e-dtype="numeric">1257003</Equal></ViewId>
+						</Key>
+					</Service>
+				</ServiceFindWithExtendedData>
+			</Service>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

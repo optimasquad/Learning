@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<Account>
+				<AccountUpdate>
+			        <Account>
+            			<Key>
+                			<AccountInternalId e-dtype="int">10007</AccountInternalId>
+            			</Key>
+            			<ExtendedData e-dtype="list">
+        					<ExtendedDataParam>
+        						<ParamId e-dtype="int">9112</ParamId>
+        						<ParamValue e-dtype="any">1</ParamValue>
+        						<ParamName e-dtype="string">Foxtel Marketing</ParamName>
+        					</ExtendedDataParam>
+        				</ExtendedData>
+        			</Account>
+    			</AccountUpdate>
+			</Account>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

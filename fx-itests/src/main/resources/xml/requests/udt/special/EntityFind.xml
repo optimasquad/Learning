@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Request>
+  <Header>
+    <OperatorName e-dtype="string">domuser</OperatorName>
+    <ApplicationName e-dtype="string">DOMTest</ApplicationName>
+    <UserName e-dtype="string">myaccusr</UserName>
+  </Header>
+  <CustomerUdtRequest>
+    <RequestList e-dtype="list">
+      <Account>
+        <RequestId e-dtype="string">AccountGetRequest</RequestId>
+        <AccountGet>
+          <Account>
+            <Key>
+              <AccountInternalId>
+                <Ref e-dtype="string">InventoryFindRequest/InvElementList/InvElement[0]/AccountId</Ref>
+              </AccountInternalId>
+            </Key>
+          </Account>
+        </AccountGet>
+      </Account>
+      <Service>
+        <RequestId e-dtype="string">ServiceGetRequest</RequestId>
+        <ServiceFindWithExtendedData>
+          <Service>
+            <Fetch e-dtype="boolean">true</Fetch>
+            <AccountExternalId>
+              <Equal>
+                <Ref e-dtype="string">AccountGetRequest/Account/AccountExternalId</Ref>
+              </Equal>
+            </AccountExternalId>
+            <AccountExternalIdType>
+              <Equal e-dtype="int">1</Equal>
+            </AccountExternalIdType>
+            <ServiceInactiveDt>
+              <GreaterThanEqual e-dtype="dateTime">2018-03-14 11:02:22</GreaterThanEqual>
+              <IsNull/>
+            </ServiceInactiveDt>
+            <ViewStatus>
+              <In e-dtype="list">
+                <ViewStatusId e-dtype="int">1</ViewStatusId>
+                <ViewStatusId e-dtype="int">2</ViewStatusId>
+              </In>
+            </ViewStatus>
+          </Service>
+        </ServiceFindWithExtendedData>
+      </Service>
+    </RequestList>
+  </CustomerUdtRequest>
+</Request>

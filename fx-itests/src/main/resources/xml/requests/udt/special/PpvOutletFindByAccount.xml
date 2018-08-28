@@ -1,0 +1,21 @@
+<Request>
+	<Header>
+	    <AccountServer e-dtype="string">3</AccountServer>
+		<ApplicationName e-dtype="string">PpvOutletFindByAccount</ApplicationName>
+		<OperatorName e-dtype="string">arbor</OperatorName>
+		<TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<Ppv>
+				<RequestId e-dtype="string">PpvOutletFindByAccountRequest</RequestId>
+				<PpvOutletFindByAccount>
+					<AccountIn>
+						<Fetch e-dtype="boolean">true</Fetch>
+						<AccountInternalId e-dtype="int">3542</AccountInternalId>
+					</AccountIn>
+				</PpvOutletFindByAccount>
+			</Ppv>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<AccountGet>
+		<Account>
+			<Key>
+				<AccountInternalId e-dtype="int">5509</AccountInternalId>
+			</Key>
+		</Account>
+	</AccountGet>
+</Request>

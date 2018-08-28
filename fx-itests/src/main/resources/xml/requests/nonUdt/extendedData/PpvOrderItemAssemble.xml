@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+<Header>
+<OperatorName e-dtype="string">Test_Verio</OperatorName>
+<ApplicationName e-dtype="string">Test_Verio</ApplicationName>
+<AccountServer e-dtype="int">3</AccountServer>
+<tenantId e-dtype="int">2</tenantId>
+</Header>
+<PpvOrderItemAssemble>
+<PpvAccountObject>
+<AccountIn>
+<AccountInternalId e-dtype="int">{{AccountInternalId}}</AccountInternalId>
+</AccountIn>
+</PpvAccountObject>
+</PpvOrderItemAssemble>
+</Request>

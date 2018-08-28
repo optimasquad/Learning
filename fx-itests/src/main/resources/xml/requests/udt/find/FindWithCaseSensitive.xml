@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Request xmlns="CSG">
+	<Header>
+		<AccountServer e-dtype="int">3</AccountServer>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<OperatorName e-dtype="string">testuser</OperatorName>
+		<TenantId e-dtype="int">2</TenantId>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<AccountSegment>
+				<AccountSegmentFind>
+					<AccountSegment>
+						<Fetch e-dtype="boolean">true</Fetch>
+						<DisplayValue>
+							<CaseInsensitive e-dtype="boolean">false</CaseInsensitive>
+							<Like e-dtype="string">f%</Like>
+						</DisplayValue>
+					</AccountSegment>
+				</AccountSegmentFind>
+			</AccountSegment>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

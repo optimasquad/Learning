@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<DebugFlag e-dtype="int">1</DebugFlag>
+		<OperatorName e-dtype="string">Nalini</OperatorName>
+		<AccountServer e-dtype="int">3</AccountServer>
+		<ApplicationName e-dtype="string">ProductElementRate_CC</ApplicationName>
+	</Header>
+	<ProductElementRate>
+		<ElementId e-dtype="int">200047</ElementId>
+		<EquipType e-dtype="int">0</EquipType>
+		<CurrencyCode e-dtype="int">1</CurrencyCode>
+		<BillingFrequency e-dtype="int">3</BillingFrequency>
+		<RateClass e-dtype="int">1000</RateClass>
+	</ProductElementRate>
+</Request>

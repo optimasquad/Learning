@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+	</Header>
+	<CustomerUdtRequest>
+		<RequestList e-dtype="list">
+			<AdjustmentType>
+				<AdjustmentTypeEligibleFind>
+						<UnbilledUsage>
+							<TypeIdUsg e-dtype="int">1</TypeIdUsg>
+						</UnbilledUsage>
+						<BilledUsage></BilledUsage>
+						<InvoiceDetail></InvoiceDetail>
+						<BalanceLineItem></BalanceLineItem>
+						<Invoice></Invoice>
+						<LanguageCode e-dtype="int">1</LanguageCode>
+				</AdjustmentTypeEligibleFind>
+			</AdjustmentType>
+		</RequestList>
+	</CustomerUdtRequest>
+</Request>

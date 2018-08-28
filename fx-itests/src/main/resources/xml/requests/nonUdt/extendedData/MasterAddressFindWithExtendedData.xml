@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<MasterAddressFindWithExtendedData> 
+		<MasterAddress> 
+			<Fetch e-dtype="boolean">true</Fetch> 
+			<HouseNumber> 
+				<Like e-dtype="string">1</Like> 
+				<CaseInsensitive e-dtype="boolean">true</CaseInsensitive> 
+			</HouseNumber> 
+			<StreetName> 
+				<Like e-dtype="string">Rose</Like> 
+				<CaseInsensitive e-dtype="boolean">true</CaseInsensitive> 
+			</StreetName> 
+			<StreetSuffix> 
+				<Equal e-dtype="string">STREET</Equal> 
+				<CaseInsensitive e-dtype="boolean">true</CaseInsensitive> 
+			</StreetSuffix> 
+			<City> 
+				<Like e-dtype="string">ARMADALE</Like> 
+				<CaseInsensitive e-dtype="boolean">true</CaseInsensitive> 
+			</City> 
+			<State> 
+				<Equal e-dtype="string">VIC</Equal> 
+				<CaseInsensitive e-dtype="boolean">true</CaseInsensitive> 
+			</State> 
+			<PostalCode> 
+				<Like e-dtype="string">3143</Like> 
+				<CaseInsensitive e-dtype="boolean">true</CaseInsensitive> 
+			</PostalCode> 
+			<CountryCode> 
+				<Equal e-dtype="int">36</Equal> 
+			</CountryCode> 
+			<IsActive> 
+				<Equal e-dtype="boolean">true</Equal> 
+			</IsActive> 
+			<ChangeDt> 
+				<Sort> 
+					<SortOrder e-dtype="int">0</SortOrder> 
+					<SortDescending e-dtype="boolean">true</SortDescending> 
+				</Sort> 
+			</ChangeDt> 
+		</MasterAddress> 
+	</MasterAddressFindWithExtendedData> 
+</Request>

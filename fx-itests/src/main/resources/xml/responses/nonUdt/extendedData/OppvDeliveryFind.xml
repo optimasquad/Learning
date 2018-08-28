@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Request>
+	<Header>
+		<OperatorName e-dtype="string">coreuser</OperatorName>
+		<ApplicationName e-dtype="string">CORE</ApplicationName>
+		<UserName e-dtype="string">CSRUser</UserName>
+	</Header>
+	<OppvDeliveryFind>
+		<OppvDelivery>
+			<Fetch e-dtype="boolean">true</Fetch>
+			<AccountInternalId>
+				<Equal e-dtype="int">10130</Equal>
+			</AccountInternalId>
+		</OppvDelivery>
+	</OppvDeliveryFind>
+</Request>

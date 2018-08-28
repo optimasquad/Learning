@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns="CSG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <AccountServer e-dtype="int">3</AccountServer>
+  </Header>
+  <Exception>
+    <Class e-dtype="string">sw_ExceptionClass</Class>
+    <Description e-dtype="string">A different type was expected than the
+      type passed in</Description>
+    <File e-dtype="string">sw_Dictionary.c</File>
+    <Function e-dtype="string">sw_DictKeysRef</Function>
+    <Item>
+      <BSD_APPNAME e-dtype="string">Shieldware</BSD_APPNAME>
+      <BSD_EN e-dtype="string">Exception Name: {0} Exception Message: {1}</BSD_EN>
+      <BSD_FORMAT e-dtype="string">Exception Name: exc_TYPEMISMATCH
+        Exception Message: sw_Int: (boolean): 1</BSD_FORMAT>
+      <BSD_TEXTID e-dtype="int">23</BSD_TEXTID>
+      <Message e-dtype="string">sw_Int: (boolean): 1</Message>
+      <Name e-dtype="string">exc_TYPEMISMATCH</Name>
+      <ReplacementList e-dtype="list">
+        <li e-dtype="string">exc_TYPEMISMATCH</li>
+        <li e-dtype="string">sw_Int: (boolean): 1</li>
+      </ReplacementList>
+    </Item>
+    <Line e-dtype="int">256</Line>
+    <Name e-dtype="string">exc_TYPEMISMATCH</Name>
+    <TraceStack e-dtype="list">
+      <TraceNode>
+        <File e-dtype="string">sw_Dictionary.c</File>
+        <Function e-dtype="string">sw_DictKeysRef</Function>
+        <Line e-dtype="int">255</Line>
+      </TraceNode>
+      <TraceNode>
+        <File e-dtype="string">gen/bp_AccountSegment.c</File>
+        <Function e-dtype="string">populateAccountSegmentObjectFilterFromDict</Function>
+        <Line e-dtype="int">214</Line>
+      </TraceNode>
+      <TraceNode>
+        <File e-dtype="string">gen/bp_AccountSegment.c</File>
+        <Function e-dtype="string">bp_AccountSegmentFind</Function>
+        <Line e-dtype="int">432</Line>
+      </TraceNode>
+      <TraceNode>
+        <File e-dtype="string">bp_Codes.c</File>
+        <Function e-dtype="string">commonServiceWrapper</Function>
+        <Line e-dtype="int">1118</Line>
+      </TraceNode>
+      <TraceNode>
+        <File e-dtype="string">bp_Codes.c</File>
+        <Function e-dtype="string">commonServiceWrapper</Function>
+        <Line e-dtype="int">838</Line>
+      </TraceNode>
+      <TraceNode>
+        <File e-dtype="string">bp_Codes.c</File>
+        <Function e-dtype="string">I_AccountSegmentFind</Function>
+        <Line e-dtype="int">3648</Line>
+      </TraceNode>
+    </TraceStack>
+  </Exception>
+</Request>

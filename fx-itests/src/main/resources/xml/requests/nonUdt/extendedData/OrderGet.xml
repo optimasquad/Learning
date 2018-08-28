@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+	<Header>
+		<OperatorName e-dtype="string">domuser</OperatorName>
+		<ApplicationName e-dtype="string">DOMTest</ApplicationName>
+		<UserName e-dtype="string">domuser</UserName>
+	</Header>
+	<OrderGet>
+		<Order>
+			<Key>
+				<OrderId e-dtype="numeric">813003</OrderId>
+			</Key>
+		</Order>
+	</OrderGet>
+</Request>
