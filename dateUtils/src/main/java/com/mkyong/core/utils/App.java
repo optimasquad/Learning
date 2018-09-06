@@ -11,9 +11,7 @@ import org.joda.time.LocalDate;
 public class App {
 
 	public static void main(String[] args) {
-
 		Options options = new Options();
-
 		Option input = new Option("i", "input", true, "input file path");
 		input.setRequired(true);
 		options.addOption(input);
@@ -36,11 +34,8 @@ public class App {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			formatter.printHelp("utility-name", options);
-
 			System.exit(1);
 		}
-
-		
 		System.out.println(getLocalCurrentDate());
 	}
 
