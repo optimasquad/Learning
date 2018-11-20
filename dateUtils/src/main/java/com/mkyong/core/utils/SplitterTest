@@ -1,0 +1,72 @@
+/**
+ * 
+ */
+package com.mkyong.core.utils;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+/**
+ * @author hp
+ *
+ */
+public class SplitterTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		// String value = "{\"complBql\":\"Udf('Execution Time') >
+		// 0030\",\"complDescArgBql\":\"Udf('Execution Time')\"}";
+		String value = "complBql:Udf('Execution Time') > 0030,complDescArgBql:Udf('Execution Time')";
+		Pattern pattern = Pattern.compile(", ");
+		List<String> list = pattern.splitAsStream(value).collect(Collectors.toList());
+		Pattern pattern13 = Pattern.compile(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+		// System.out.println(list);
+		Map<String, String> maps = new HashMap<String, String>();
+		for (String s : list) {
+
+			Pattern pattern12 = Pattern.compile(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+			String[] response = pattern12.split(s);
+			for (int i = 0; i < response.length; i++) {
+				String res[] = response[i].split(":");
+
+				maps.put(res[0], res[1]);
+			}
+		}
+		
+		// List<Integer> integerList1 = Arrays.stream(intArray).boxed().collect(Collectors.toList());
+
+		String[] arrays = list.stream().map(s -> pattern13.split(s)).
+				collect(Collectors.toList()).get(0);
+		
+		
+		List<String> listss = Stream.of(arrays).collect(Collectors.toList());
+		
+		Map<String, String> kvs =
+				listss
+			        .stream()
+			        .map(elem -> elem.split(":"))
+			        .collect(Collectors.toMap(e -> e[0], e -> e.length>1? e[1]: ""));
+		
+		Map<String,String> map = Pattern.compile(":")
+			    .splitAsStream(arrays[0].trim())
+			    .map(s -> s.split(":", 2))
+			    .collect(Collectors.toMap(a -> a[0], a -> a.length>1? a[1]: ""));
+		
+		
+		kvs.entrySet().forEach(entry->{
+			System.out.println(entry.getKey());
+			System.out.println(entry.getValue());
+			
+		});
+	
+
+	}
+
+}
